@@ -1,0 +1,164 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANIMATED INPUT FORM</title>
+    <link rel="stylesheet" href="/form.css">
+</head>
+<!-- FOR CSSS -->
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background: rgb(18, 18, 139);
+        height: 100%;
+        width: 100%;
+        font-family: roboto;
+    }
+
+    form {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: rgb(2, 2, 73);
+        width: 600px;
+        padding: 40px;
+        height: 550px;
+        border-radius: 10px;
+    }
+
+    form h2 {
+        text-align: center;
+        color: #a178a1;
+        margin-bottom: 30px;
+    }
+
+    form span {
+        /* position: absolute;
+    top: 50%; */
+    }
+
+    form span div {
+        position: relative;
+    }
+
+    form span div input {
+        width: 100%;
+        padding: 10px 0;
+        padding-inline: 110px;
+        font-size: 18px;
+        border: none;
+        /* border-bottom: 1px solid white; */
+        outline: none;
+        background: white;
+        color: black;
+        margin-bottom: 2rem;
+    }
+
+    form span div label {
+        position: absolute;
+        left: 13PX;
+        padding: 10px 0;
+        font-size: 19px;
+        pointer-events: none;
+        color: rgb(63, 55, 55);
+    }
+
+    form a {
+        color: white;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 19px;
+        text-transform: uppercase;
+        overflow: hidden;
+        letter-spacing: 2.2px;
+        padding: 10px 10px;
+        margin-top: 20px;
+        text-align: center;
+        transition: all ease-in 0.5sec;
+        background-color: rgb(36, 94, 36);
+
+    }
+
+    form a:hover {
+        background: #f49803;
+        border-radius: 5px;
+        color: rgb(59, 42, 42);
+    }
+
+    form span .radio {
+        position: relative;
+        display: block;
+        display: flex;
+
+    }
+
+    form span .radio div {
+        display: flex;
+        width: 20%;
+        position: relative;
+        left: -45px;
+    }
+
+    form span .radio div label {
+        position: absolute;
+        left: 70px;
+        bottom: 18px;
+        color: rgb(197, 170, 170);
+    }
+</style>
+<!-- END OF CSS -->
+
+<body>
+    <form>
+        <h2>LOGIN FORM</h2>
+        <span>
+            <div>
+                <input type="text" />
+                <label for="">Username</label>
+            </div>
+            <div>
+                <input type="email" name="email" id="email" required="required">
+                <label for="">Email</label>
+            </div>
+            <div>
+                <input type="tel" required="required">
+                <label for="">Phone</label>
+            </div>
+            <div>
+                <input type="password" name="" id="">
+                <label for="">Password</label>
+            </div>
+            <div class="radio">
+                <div>
+                    <label for="">Male</label>
+                    <input type="radio" name="" id="">
+                </div>
+                <div>
+                    <label for="">Female</label>
+                    <input type="radio" name="" id="">
+                </div>
+            </div>
+        </span>
+
+        <a href="">
+
+            Submit
+        </a>
+
+    </form>
+    <script type="text/javascript">
+        alert("Congratulations, your form has been sumitted sucessfully.");
+    </script>
+</body>
+
+</html>
